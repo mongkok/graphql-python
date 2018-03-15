@@ -1,4 +1,5 @@
 Django==2.0
 django-filter==1.1.0
+django-graphiql-debug-toolbar==0.0.1
 django-graphql-jwt==0.1.4
 graphene-django==2.0.0

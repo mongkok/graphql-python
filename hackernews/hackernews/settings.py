@@ -135,3 +135,9 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'hackernews.schema.schema',
 }
+
+# Debug toolbar
+INTERNAL_IPS = ['127.0.0.1']
+INSTALLED_APPS += ['debug_toolbar', 'graphiql_debug_toolbar']  # NOQA
+MIDDLEWARE += ['graphiql_debug_toolbar.middleware.DebugToolbarMiddleware']  # NOQA
+DEBUG_TOOLBAR_PATCH_SETTINGS = False
